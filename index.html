@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript on Steroids </title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+		<div class="container-1">
+
+			<h2> Challeneg : your age in days </h2>
+			<div class="flex-box-container-1">
+					<div>
+							<button class="btn btn-primary" onclick="ageInDays()"> click me </button>
+					</div>
+					<div>
+							<button class="btn btn-danger" onclick="reset()"> reset </button>
+					</div>
+			</div>
+		</div>
+		<div class="container-1">
+			<div id="flex-box-result"></div>
+		</div>
+
+	<div class="container-2">
+			<h2> Challeneg 2 : cat generator </h2>
+			<button class="btn btn-success" id= "cat-generator"  onclick="generateCat()"> cat generator </button>
+			<div class="flex-box-container-2" id="cat-gen-btn">
+
+			</div>
+
+	</div>
+
+	<div class="container3">
+			<h2> Challenge 3: Rock, paper, scissors</h2>
+			<div class="flex-box-rps" id="flex-box-rps-div">
+					<img id="rock" src="images/stone_PNG13601.png" width=160 height=200 alt="" onclick="rpsGame(this)">
+					<img id="paper" src="images/paper.jpg" width=150 height=170 alt="" onclick="rpsGame(this)">
+					<img id="scissor" src="images/scissor.jpg" width=150 height=170 alt="" onclick="rpsGame(this)">
+
+			</div>	<br>
+			<button class="btn btn-warning" onclick="reload1()"> Try again </button> <br><br>
+	</div>
+
+	<div class="container_4">
+			<h2 id="change_my_color"> Challenge 4: Change the color of all Buttons </h2>
+			<div id="flex_box_pick_color">
+					<form action="">
+						<select name="backdrop" id="backdrop" onchange="buttonColorChange(this)">
+
+								<option value="random"> Random </option>
+								<option value="red"> Red </option>
+								<option value="green"> Green </option>
+								<option value="reset"> Reset </option>
+						 </select>
+					</form>
+
+					<button class="btn btn-primary"> wee!</button>
+					<button class="btn btn-danger"> Yeahoo</button>
+					<button class="btn btn-warning"> Google</button>
+					<button class="btn btn-success"> facebook</button>
+
+			</div>
+	</div>
+
+	<div class="container_5">
+		 	<h2> Challeneg 5: Blackjack </h2>
+			<h3 id="blackjack-result"> <span id="aa1" > Let's play </span> </h3> <br>
+			<div class="flex-blackjack-raw-1">
+					<div id="your-box">
+						<h2> You <span id="your-blackjack-result"> 0 </span></h2>
+					</div>
+
+					<div id="dealer-box">
+						<h2> Dealer: <span id="dealer-blackjack-result"> 0 </span></h2>
+					</div>
+			</div>
+
+			<div class="flex-blackjack-raw-2">
+					<button class="btn-lg btn-primary mr-2" id="blackjack-hit-button"> Hit </button>
+					<button class="btn-lg btn-warning mr-2" id="blackjack-stand-button"> Stand </button>
+					<button class="btn-lg btn-danger mr-2" id="blackjack-deal-button"> Deal </button>
+			</div>
+
+			<div class="flex-blackjack-raw-3">
+					<table>
+							<tr>
+								<th> Win </th>
+								<th> Losses </th>
+								<th> Draws </th>
+							</tr>
+							<tr>
+								<td><span id="wins"> 0 </span></td>
+								<td><span id="losses"> 0 </span></td>
+								<td><span id="draws"> 0 </span> </td>
+							</tr>
+					</table>
+			</div>
+	</div>
+
+
+
+
+
+
+
+
+<div id="demo"></div>
+	<script src="js/javascript.js"> </script>
+
+</body>
+</html>
